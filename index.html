@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>VPN Таперка</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game">
+    <h1>VPN Таперка</h1>
+    <button id="tapBtn">Тап!</button>
+    <p>Очки: <span id="score">0</span></p>
+    <p>Сила тапа: <span id="tapPower">1</span></p>
+
+    <h2>Магазин</h2>
+    <div class="shop">
+      <button onclick="buyItem(20000)">Купить ключ VPN (20.000 очков)</button>
+      <button onclick="upgradeTap()">Улучшить тап (стоимость <span id="upgradeCost">20</span>)</button>
+    </div>
+
+    <button class="reset-btn" onclick="resetGame()">Сбросить прогресс</button>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    ss://YWVzLTI1Ni1nY206aHhPMmhiMXowZjRBUHE1VkBmcmE1LnZwbnR5cGUuZGV2OjgzODg=#VPNTYPE 🇩🇪 Frankfurt 5
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
